@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2019 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -442,7 +442,7 @@ sub GetStatTable {
                     && $SurveyData{$Attribute} =~ /\A(\d{4})-(\d{2})-(\d{2})\s(\d{2}):(\d{2}):(\d{2})\z/
                     )
                 {
-                    $SurveyData{$Attribute} = $StatsObject->_FromOTRSTimeZone(
+                    $SurveyData{$Attribute} = $StatsObject->_FromLIGEROTimeZone(
                         String   => $SurveyData{$Attribute},
                         TimeZone => $Param{TimeZone},
                     );

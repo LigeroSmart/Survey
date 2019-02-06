@@ -2,16 +2,16 @@
 # Translators:
 # Dominik <dominik@reichardt-online.it>, 2016
 # Ettore Atalan <atalanttore@googlemail.com>, 2014-2017
-# mathiasbraeunling <mathias.braeunling@otrs.com>, 2014
-# ru_otrs <robert.ullrich@otrs.com>, 2014-2015
+# mathiasbraeunling <mathias.braeunling@ligero.com>, 2014
+# ru_ligero <robert.ullrich@ligero.com>, 2014-2015
 # Rudy R <rudy.rohde@googlemail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-07-17 13:51+0000\n"
 "PO-Revision-Date: 2018-07-17 13:53+0000\n"
-"Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
-"Language-Team: German (http://www.transifex.com/otrs/OTRS/language/de/)\n"
+"Last-Translator: Martin Gruner <martin.gruner@ligero.com>\n"
+"Language-Team: German (http://www.transifex.com/ligero/LIGERO/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -525,9 +525,9 @@ msgstr "Definiert die maximale Anzahl von Umfragen die ein Kunde innerhalb von 3
 msgid ""
 "Defines the amount in hours a ticket has to be closed to trigger the sending"
 " of a survey, ( 0 means send immediately after close ). Note: delayed survey"
-" sending is done by the OTRS Daemon, prior activation of "
+" sending is done by the LIGERO Daemon, prior activation of "
 "'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
-msgstr "Definiert die Anzahl an Stunden für die ein Ticket geschlossen sein muss um den Versand einer Umfrage auszulösen ( 0 bedeutet, sofort nach Schließen eines Tickets senden ). Hinweis: Das absenden der verzögerten Umfrage wird durch den OTRS Daemon erledigt, vorherige Aktivierung durch die 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' Einstellung."
+msgstr "Definiert die Anzahl an Stunden für die ein Ticket geschlossen sein muss um den Versand einer Umfrage auszulösen ( 0 bedeutet, sofort nach Schließen eines Tickets senden ). Hinweis: Das absenden der verzögerten Umfrage wird durch den LIGERO Daemon erledigt, vorherige Aktivierung durch die 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' Einstellung."
 
 #. SysConfig
 msgid ""
@@ -623,7 +623,7 @@ msgstr "Öffentliche Umfrage."
 #. SysConfig
 msgid ""
 "Results older than the configured amount of days will be deleted. Note: "
-"delete results done by the OTRS Daemon, prior activation of "
+"delete results done by the LIGERO Daemon, prior activation of "
 "'Task###SurveyRequestsDelete' setting."
 msgstr ""
 

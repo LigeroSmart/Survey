@@ -41,9 +41,9 @@
         Shows graphical statistics of completed Surveys.
     </para>
     <para>
-        If you have questions regarding this document or if you need further information, please log in to our customer portal at portal.otrs.com with your OTRS ID and create a ticket.
-        You do not have an OTRS ID yet? Register
-        <ulink url="https://portal.otrs.com/otrs/customer.pl#Signup">here for free</ulink>.
+        If you have questions regarding this document or if you need further information, please log in to our customer portal at portal.ligero.com with your LIGERO ID and create a ticket.
+        You do not have an LIGERO ID yet? Register
+        <ulink url="https://portal.ligero.com/ligero/customer.pl#Signup">here for free</ulink>.
     </para>
 </preface>
 
@@ -66,7 +66,7 @@
     <title>System Requirements</title>
     <section>
         <title>Framework</title>
-        <para>The following OTRS framework is required:</para>
+        <para>The following LIGERO framework is required:</para>
         <para>$Framework</para>
     </section>
     <section>
@@ -105,8 +105,8 @@
             (please note that you need to be in the "admin" group).
         </para>
         <para>
-            <ulink url="http://localhost/otrs/index.pl?Action=AdminPackageManager">
-                http://localhost/otrs/index.pl?Action=AdminPackageManager
+            <ulink url="http://localhost/ligero/index.pl?Action=AdminPackageManager">
+                http://localhost/ligero/index.pl?Action=AdminPackageManager
             </ulink>
         </para>
     </section>
@@ -114,11 +114,11 @@
         <title>Command Line</title>
         <para>
             Whenever you cannot use the Admin Interface for whatever reason, you may use the
-            following command line tool ("bin/otrs.Console.pl Admin::Package::Install") instead.
+            following command line tool ("bin/ligero.Console.pl Admin::Package::Install") instead.
         </para>
         <para>
             <screen>
-shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
+shell> bin/ligero.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
             </screen>
         </para>
     </section>
@@ -268,7 +268,7 @@ shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
     <section>
         <title>Survey::DeletePeriod.</title>
         <para>Navigation: Core::Survey.</para>
-        <para>Results older than the configured amount of days will be deleted. Note: delete results done by the OTRS Daemon, prior activation of 'Task###SurveyRequestsDelete' setting.</para>
+        <para>Results older than the configured amount of days will be deleted. Note: delete results done by the LIGERO Daemon, prior activation of 'Task###SurveyRequestsDelete' setting.</para>
     </section>
     <section>
         <title>Survey::Frontend::AgentSurveyOverview###ShowColumns.</title>
@@ -343,7 +343,7 @@ shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
     <section>
         <title>Survey::SendInHoursAfterClose.</title>
         <para>Navigation: Core::Survey.</para>
-        <para>Defines the amount in hours a ticket has to be closed to trigger the sending of a survey, ( 0 means send immediately after close ). Note: delayed survey sending is done by the OTRS Daemon, prior activation of 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting.</para>
+        <para>Defines the amount in hours a ticket has to be closed to trigger the sending of a survey, ( 0 means send immediately after close ). Note: delayed survey sending is done by the LIGERO Daemon, prior activation of 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting.</para>
     </section>
     <section>
         <title>Survey::SendNoSurveyRegExp.</title>
@@ -385,7 +385,7 @@ shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
     <section>
         <title>Create new Survey</title>
         <para>
-            This feature lets OTRS users create new Survey by selecting the menu "SURVEY"
+            This feature lets LIGERO users create new Survey by selecting the menu "SURVEY"
             and choosing "New".
         </para>
         <para>
@@ -435,7 +435,7 @@ shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
             possible scores.
         </para>
         <para>
-            For each answer type the OTRS user can choose
+            For each answer type the LIGERO user can choose
             if he wants a customer to be required to answer this question or if a customer can
             ignore the question.
         </para>
@@ -453,7 +453,7 @@ shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
     <section>
         <title>Start sending Survey requests</title>
         <para>
-            When the OTRS user has finished adding or modifying questions and possible answers,
+            When the LIGERO user has finished adding or modifying questions and possible answers,
             he can leave the "Edit Questions" area by clicking "Close window".
         </para>
         <para>
@@ -648,22 +648,22 @@ shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
             command on the command line:
         </para>
         <screen>
-shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test Survey --test GetRequestRecipient --test RequestsSend
+shell> perl bin/ligero.Console.pl Dev::UnitTest::Run --test Survey --test GetRequestRecipient --test RequestsSend
         </screen>
         <para>Selenium unit tests</para>
         <para>
             To run the Selenium unit tests, make sure you have a complete Selenium environment setup in your Kernel/Config.pm file and a running a WebDriver.
         </para>
         <screen>
-shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test AgentSurveyAdd --test AgentSurveyEdit --test AgentSurveyEditQuestions --test AgentSurveyOverview --test AgentSurveyStats --test AgentSurveyZoom
-shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test PublicSurvey
-shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test SurveyMenu/Generic:SurveyOverview/Small
+shell> perl bin/ligero.Console.pl Dev::UnitTest::Run --test AgentSurveyAdd --test AgentSurveyEdit --test AgentSurveyEditQuestions --test AgentSurveyOverview --test AgentSurveyStats --test AgentSurveyZoom
+shell> perl bin/ligero.Console.pl Dev::UnitTest::Run --test PublicSurvey
+shell> perl bin/ligero.Console.pl Dev::UnitTest::Run --test SurveyMenu/Generic:SurveyOverview/Small
         </screen>
         <para>Run all available unit tests</para>
         <para>
             To run all available unit tests, use the following command on the command line:
         </para>
-        <screen>shell> perl bin/otrs.Console.pl Dev::UnitTest::Run</screen>
+        <screen>shell> perl bin/ligero.Console.pl Dev::UnitTest::Run</screen>
     </section>
 </chapter>
 

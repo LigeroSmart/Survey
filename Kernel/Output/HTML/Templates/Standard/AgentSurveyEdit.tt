@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2019 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -153,27 +153,27 @@
 
         <p>[% Translate("You can use the following tags") | html %]:</p>
         <dl>
-            <dt><code>&lt;OTRS_TICKET_*&gt;</code></dt>
+            <dt><code>&lt;LIGERO_TICKET_*&gt;</code></dt>
             <dd>
                 [% Translate("Options of the ticket data") | html %] ([% Translate("e. g.") | html %]
-                <code>&lt;OTRS_TICKET_TicketNumber&gt;, &lt;OTRS_TICKET_TicketID&gt;, &lt;OTRS_TICKET_Queue&gt;, &lt;OTRS_TICKET_State&gt;</code>).
+                <code>&lt;LIGERO_TICKET_TicketNumber&gt;, &lt;LIGERO_TICKET_TicketID&gt;, &lt;LIGERO_TICKET_Queue&gt;, &lt;LIGERO_TICKET_State&gt;</code>).
             </dd>
 
-            <dt><code>&lt;OTRS_CUSTOMER_DATA_*&gt;</code></dt>
+            <dt><code>&lt;LIGERO_CUSTOMER_DATA_*&gt;</code></dt>
             <dd>
                 [% Translate("Options of the current customer user data") | html %] ([% Translate("e. g.") | html %]
-                <code>&lt;OTRS_CUSTOMER_DATA_UserFirstname&gt;</code>).
+                <code>&lt;LIGERO_CUSTOMER_DATA_UserFirstname&gt;</code>).
             </dd>
 
-            <dt><code>&lt;OTRS_CONFIG_*&gt;</code></dt>
+            <dt><code>&lt;LIGERO_CONFIG_*&gt;</code></dt>
             <dd>
-                [% Translate("Config options") | html %] ([% Translate("e. g.") | html %] <code>&lt;OTRS_CONFIG_HttpType&gt;</code>).
+                [% Translate("Config options") | html %] ([% Translate("e. g.") | html %] <code>&lt;LIGERO_CONFIG_HttpType&gt;</code>).
             </dd>
 
-            <dt><code>&lt;OTRS_PublicSurveyKey&gt;</code></dt>
+            <dt><code>&lt;LIGERO_PublicSurveyKey&gt;</code></dt>
             <dd>
                 [% Translate("Public survey key") | html %] ([% Translate("e. g.") | html %]
-                <code>&lt;OTRS_PublicSurveyKey&gt;</code>).
+                <code>&lt;LIGERO_PublicSurveyKey&gt;</code>).
             </dd>
         </dl>
 
@@ -181,9 +181,9 @@
             [% Translate("Example survey") | html %]:
         </p>
         <textarea rows="5" cols="60" name="TmpSurvey" disabled="disabled">
-[% Translate("The current ticket state is") | html %]: "&lt;OTRS_TICKET_State&gt;"
+[% Translate("The current ticket state is") | html %]: "&lt;LIGERO_TICKET_State&gt;"
 
-[% Translate("Your email address is") | html %]: "&lt;OTRS_CUSTOMER_UserEmail&gt;"
+[% Translate("Your email address is") | html %]: "&lt;LIGERO_CUSTOMER_UserEmail&gt;"
         </textarea>
     </div>
 </div>

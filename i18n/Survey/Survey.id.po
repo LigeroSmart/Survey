@@ -1,14 +1,14 @@
 # 
 # Translators:
-# OTRS SDN BHD <otrssdnbhd@gmail.com>, 2016
+# LIGERO SDN BHD <ligerosdnbhd@gmail.com>, 2016
 # Sofyan Arifin <sofyanarifin39@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-07-17 13:51+0000\n"
 "PO-Revision-Date: 2018-07-17 13:53+0000\n"
-"Last-Translator: OTRS SDN BHD <otrssdnbhd@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/otrs/OTRS/language/id/)\n"
+"Last-Translator: LIGERO SDN BHD <ligerosdnbhd@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/ligero/LIGERO/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -522,7 +522,7 @@ msgstr "Definisikan Jumlah survey maksimum yang dikirimkan kepada pelanggan per 
 msgid ""
 "Defines the amount in hours a ticket has to be closed to trigger the sending"
 " of a survey, ( 0 means send immediately after close ). Note: delayed survey"
-" sending is done by the OTRS Daemon, prior activation of "
+" sending is done by the LIGERO Daemon, prior activation of "
 "'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
 msgstr ""
 
@@ -620,7 +620,7 @@ msgstr "Survey umum"
 #. SysConfig
 msgid ""
 "Results older than the configured amount of days will be deleted. Note: "
-"delete results done by the OTRS Daemon, prior activation of "
+"delete results done by the LIGERO Daemon, prior activation of "
 "'Task###SurveyRequestsDelete' setting."
 msgstr ""
 

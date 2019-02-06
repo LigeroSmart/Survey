@@ -5,11 +5,11 @@
 # Norihiro Tanaka <noritnk@kcn.ne.jp>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-07-17 13:51+0000\n"
 "PO-Revision-Date: 2018-07-17 13:53+0000\n"
-"Last-Translator: Carlos Rodríguez <carlos.rodriguez@otrs.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/otrs/OTRS/language/ja/)\n"
+"Last-Translator: Carlos Rodríguez <carlos.rodriguez@ligero.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/ligero/LIGERO/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -523,9 +523,9 @@ msgstr "30日の間に顧客に送信する調査の最大数を定義します�
 msgid ""
 "Defines the amount in hours a ticket has to be closed to trigger the sending"
 " of a survey, ( 0 means send immediately after close ). Note: delayed survey"
-" sending is done by the OTRS Daemon, prior activation of "
+" sending is done by the LIGERO Daemon, prior activation of "
 "'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
-msgstr "アンケートの送信をトリガーするためにチケットをクローズする時間数を定義します（0はクローズ直後に送信されます）。 注：遅延アンケート送信は、OTRSデーモンによって実行され、事前に 'Daemon :: SchedulerCronTaskManager :: Task ### SurveyRequestsSend'の設定が有効になっています。"
+msgstr "アンケートの送信をトリガーするためにチケットをクローズする時間数を定義します（0はクローズ直後に送信されます）。 注：遅延アンケート送信は、LIGEROデーモンによって実行され、事前に 'Daemon :: SchedulerCronTaskManager :: Task ### SurveyRequestsSend'の設定が有効になっています。"
 
 #. SysConfig
 msgid ""
@@ -621,9 +621,9 @@ msgstr "公開インターフェースのPublicSurveyオブジェクトに対す
 #. SysConfig
 msgid ""
 "Results older than the configured amount of days will be deleted. Note: "
-"delete results done by the OTRS Daemon, prior activation of "
+"delete results done by the LIGERO Daemon, prior activation of "
 "'Task###SurveyRequestsDelete' setting."
-msgstr "設定された日数より古い結果は削除されます。 注： 'Task ### SurveyRequestsDelete'設定を有効にする前に、OTRSデーモンによって行われた結果を削除して下さい。"
+msgstr "設定された日数より古い結果は削除されます。 注： 'Task ### SurveyRequestsDelete'設定を有効にする前に、LIGEROデーモンによって行われた結果を削除して下さい。"
 
 #. SysConfig
 msgid ""

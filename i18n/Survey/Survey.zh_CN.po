@@ -4,11 +4,11 @@
 # 汇民 王 <whuim@qq.com>, 2017-2018
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-07-17 13:51+0000\n"
 "PO-Revision-Date: 2018-07-17 13:53+0000\n"
-"Last-Translator: Carlos Rodríguez <carlos.rodriguez@otrs.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/otrs/OTRS/language/zh_CN/)\n"
+"Last-Translator: Carlos Rodríguez <carlos.rodriguez@ligero.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/ligero/LIGERO/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -522,9 +522,9 @@ msgstr "定义每30天发送给一个客户的最大调查数（ 0 代表没有�
 msgid ""
 "Defines the amount in hours a ticket has to be closed to trigger the sending"
 " of a survey, ( 0 means send immediately after close ). Note: delayed survey"
-" sending is done by the OTRS Daemon, prior activation of "
+" sending is done by the LIGERO Daemon, prior activation of "
 "'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
-msgstr "定义一个工单关闭后触发发送一个调查的小时数（ 0 代表在工单关闭后立即发送调查请求）。注意：延迟发送的调查由OTRS守护程序（即先前激活的设置'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend'）完成。"
+msgstr "定义一个工单关闭后触发发送一个调查的小时数（ 0 代表在工单关闭后立即发送调查请求）。注意：延迟发送的调查由LIGERO守护程序（即先前激活的设置'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend'）完成。"
 
 #. SysConfig
 msgid ""
@@ -620,9 +620,9 @@ msgstr "公共调查。"
 #. SysConfig
 msgid ""
 "Results older than the configured amount of days will be deleted. Note: "
-"delete results done by the OTRS Daemon, prior activation of "
+"delete results done by the LIGERO Daemon, prior activation of "
 "'Task###SurveyRequestsDelete' setting."
-msgstr "超过配置的天数的调查结果将被删除。 注意：删除调查结果由先前激活的 'Task###SurveyRequestsDelete' 设置的OTRS守护程序完成。"
+msgstr "超过配置的天数的调查结果将被删除。 注意：删除调查结果由先前激活的 'Task###SurveyRequestsDelete' 设置的LIGERO守护程序完成。"
 
 #. SysConfig
 msgid ""

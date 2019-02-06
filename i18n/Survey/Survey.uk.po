@@ -5,11 +5,11 @@
 # Vira Motorko <ato4ka@i.ua>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-07-17 13:51+0000\n"
 "PO-Revision-Date: 2018-07-17 13:53+0000\n"
 "Last-Translator: Iurii Rytenko <inter2107@gmail.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/otrs/OTRS/language/uk/)\n"
+"Language-Team: Ukrainian (http://www.transifex.com/ligero/LIGERO/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -523,7 +523,7 @@ msgstr "Визначає таксимальне значення кількос�
 msgid ""
 "Defines the amount in hours a ticket has to be closed to trigger the sending"
 " of a survey, ( 0 means send immediately after close ). Note: delayed survey"
-" sending is done by the OTRS Daemon, prior activation of "
+" sending is done by the LIGERO Daemon, prior activation of "
 "'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
 msgstr "Визначає значення затримки надсилання опитування після закриття заявки в годинах (0-одразу)"
 
@@ -621,9 +621,9 @@ msgstr "Публічне опитування"
 #. SysConfig
 msgid ""
 "Results older than the configured amount of days will be deleted. Note: "
-"delete results done by the OTRS Daemon, prior activation of "
+"delete results done by the LIGERO Daemon, prior activation of "
 "'Task###SurveyRequestsDelete' setting."
-msgstr "Результати, старші ніж визначена кількість днів будуть видалені. Замітка: налаштовується OTRS Daemon Task###SurveyRequestsDelete"
+msgstr "Результати, старші ніж визначена кількість днів будуть видалені. Замітка: налаштовується LIGERO Daemon Task###SurveyRequestsDelete"
 
 #. SysConfig
 msgid ""

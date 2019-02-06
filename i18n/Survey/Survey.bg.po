@@ -3,11 +3,11 @@
 # Plamen Petkov <plamen_3592@abv.bg>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-07-17 13:51+0000\n"
 "PO-Revision-Date: 2018-07-17 13:53+0000\n"
 "Last-Translator: Plamen Petkov <plamen_3592@abv.bg>\n"
-"Language-Team: Bulgarian (http://www.transifex.com/otrs/OTRS/language/bg/)\n"
+"Language-Team: Bulgarian (http://www.transifex.com/ligero/LIGERO/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -521,9 +521,9 @@ msgstr "Максималния брой проучвания, които се и
 msgid ""
 "Defines the amount in hours a ticket has to be closed to trigger the sending"
 " of a survey, ( 0 means send immediately after close ). Note: delayed survey"
-" sending is done by the OTRS Daemon, prior activation of "
+" sending is done by the LIGERO Daemon, prior activation of "
 "'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
-msgstr "Сумата в часове, за която билетът трябва да бъде затворен, за да се задейства изпращането на проучване, (0 - означава изпращане веднага след затваряне). Забележка : изпращането със закъснение на изследването се извършва от OTRS Daemon, преди активирането на настройката \"Daemon :: SchedulerCronTaskManager :: Task ### SurveyRequestsSend\"."
+msgstr "Сумата в часове, за която билетът трябва да бъде затворен, за да се задейства изпращането на проучване, (0 - означава изпращане веднага след затваряне). Забележка : изпращането със закъснение на изследването се извършва от LIGERO Daemon, преди активирането на настройката \"Daemon :: SchedulerCronTaskManager :: Task ### SurveyRequestsSend\"."
 
 #. SysConfig
 msgid ""
@@ -619,7 +619,7 @@ msgstr "Публично проучване."
 #. SysConfig
 msgid ""
 "Results older than the configured amount of days will be deleted. Note: "
-"delete results done by the OTRS Daemon, prior activation of "
+"delete results done by the LIGERO Daemon, prior activation of "
 "'Task###SurveyRequestsDelete' setting."
 msgstr ""
 

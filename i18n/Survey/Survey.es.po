@@ -1,7 +1,7 @@
 # 
 # Translators:
-# Carlos Rodríguez <carlos.rodriguez@otrs.com>, 2014
-# Carlos Rodríguez <carlos.rodriguez@otrs.com>, 2014
+# Carlos Rodríguez <carlos.rodriguez@ligero.com>, 2014
+# Carlos Rodríguez <carlos.rodriguez@ligero.com>, 2014
 # David B <link.bigpoint@outlook.com>, 2017-2018
 # Fernando Casal <fernando.casal@serviciomovil.com>, 2017-2018
 # Iñaki Martínez, 2017
@@ -9,11 +9,11 @@
 # Luigy, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-07-17 13:51+0000\n"
 "PO-Revision-Date: 2018-07-17 13:53+0000\n"
-"Last-Translator: Carlos Rodríguez <carlos.rodriguez@otrs.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/otrs/OTRS/language/es/)\n"
+"Last-Translator: Carlos Rodríguez <carlos.rodriguez@ligero.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/ligero/LIGERO/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -527,9 +527,9 @@ msgstr "Define la cantidad máxima de encuestas que se mandarán a un cliente ca
 msgid ""
 "Defines the amount in hours a ticket has to be closed to trigger the sending"
 " of a survey, ( 0 means send immediately after close ). Note: delayed survey"
-" sending is done by the OTRS Daemon, prior activation of "
+" sending is done by the LIGERO Daemon, prior activation of "
 "'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
-msgstr "Define la cantidad en horas en que se debe cerrar un ticket para activar el envío de una encuesta, (0 significa enviar inmediatamente después del cierre). Nota: el envío tardío de la encuesta es realizado por Daemon OTRS, previa activación de 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
+msgstr "Define la cantidad en horas en que se debe cerrar un ticket para activar el envío de una encuesta, (0 significa enviar inmediatamente después del cierre). Nota: el envío tardío de la encuesta es realizado por Daemon LIGERO, previa activación de 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
 
 #. SysConfig
 msgid ""
@@ -625,9 +625,9 @@ msgstr "Encuesta Pública."
 #. SysConfig
 msgid ""
 "Results older than the configured amount of days will be deleted. Note: "
-"delete results done by the OTRS Daemon, prior activation of "
+"delete results done by the LIGERO Daemon, prior activation of "
 "'Task###SurveyRequestsDelete' setting."
-msgstr "Los resultados anteriores a la cantidad configurada de días serán eliminados. Nota: elimine los resultados realizados por Daemon OTRS, antes de la activación de la configuración 'Task###SurveyRequestsDelete'."
+msgstr "Los resultados anteriores a la cantidad configurada de días serán eliminados. Nota: elimine los resultados realizados por Daemon LIGERO, antes de la activación de la configuración 'Task###SurveyRequestsDelete'."
 
 #. SysConfig
 msgid ""

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<otrs_config version="2.0" init="Application">
+<ligero_config version="2.0" init="Application">
     <Setting Name="Frontend::Module###AgentSurveyOverview" Required="0" Valid="1">
         <Description Translatable="1">All parameters for the Survey object in the agent interface.</Description>
         <Navigation>Frontend::Agent::ModuleRegistration</Navigation>
@@ -402,7 +402,7 @@
         </Value>
     </Setting>
     <Setting Name="Survey::DeletePeriod" Required="0" Valid="1">
-        <Description Translatable="1">Results older than the configured amount of days will be deleted. Note: delete results done by the OTRS Daemon, prior activation of 'Task###SurveyRequestsDelete' setting.</Description>
+        <Description Translatable="1">Results older than the configured amount of days will be deleted. Note: delete results done by the LIGERO Daemon, prior activation of 'Task###SurveyRequestsDelete' setting.</Description>
         <Navigation>Core::Survey</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="^\d+$">365</Item>
@@ -453,11 +453,11 @@ Thanks for using our service. Help us to improve us and our services.
 
 Please give us feedback on how to improve our services:
 
-&lt;OTRS_CONFIG_HttpType&gt;://&lt;OTRS_CONFIG_FQDN&gt;/&lt;OTRS_CONFIG_ScriptAlias&gt;public.pl?Action=PublicSurvey;PublicSurveyKey=&lt;OTRS_PublicSurveyKey&gt;
+&lt;LIGERO_CONFIG_HttpType&gt;://&lt;LIGERO_CONFIG_FQDN&gt;/&lt;LIGERO_CONFIG_ScriptAlias&gt;public.pl?Action=PublicSurvey;PublicSurveyKey=&lt;LIGERO_PublicSurveyKey&gt;
 
 Thanks for your help!
 
-Your OTRS-Team
+Your LIGERO-Team
             </Item>
         </Value>
     </Setting>
@@ -535,7 +535,7 @@ Your OTRS-Team
         </Value>
     </Setting>
     <Setting Name="Survey::SendInHoursAfterClose" Required="1" Valid="1">
-        <Description Translatable="1">Defines the amount in hours a ticket has to be closed to trigger the sending of a survey, ( 0 means send immediately after close ). Note: delayed survey sending is done by the OTRS Daemon, prior activation of 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting.</Description>
+        <Description Translatable="1">Defines the amount in hours a ticket has to be closed to trigger the sending of a survey, ( 0 means send immediately after close ). Note: delayed survey sending is done by the LIGERO Daemon, prior activation of 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting.</Description>
         <Navigation>Core::Survey</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="^[0-9]{1,5}$">0</Item>
@@ -720,4 +720,4 @@ Your OTRS-Team
             <Item ValueType="Checkbox">0</Item>
         </Value>
     </Setting>
-</otrs_config>
+</ligero_config>

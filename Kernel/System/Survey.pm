@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2019 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -216,7 +216,7 @@ Returns:
         "CustomerUserConditionsJSON" => "{\"UserLogin\":[{\"RegExpValue\":\"\",\"Negation\":\"0\"}]}",
         "Description" => "Selenium Descriptioncustomer",
         "Introduction" => "Selenium Introduction",
-        "NotificationBody" => "Dear Customer,\r\n\r\nThanks for using our service. Help us to improve us and our services.\r\n\r\nPlease give us feedback on how to improve our services:\r\n\r\nhttp://localhost/otrs-alpha/public.pl?Action=PublicSurvey;PublicSurveyKey=<OTRS_PublicSurveyKey>\r\n\r\nThanks for your help!\r\n\r\nYour OTRS-Team",
+        "NotificationBody" => "Dear Customer,\r\n\r\nThanks for using our service. Help us to improve us and our services.\r\n\r\nPlease give us feedback on how to improve our services:\r\n\r\nhttp://localhost/ligero-alpha/public.pl?Action=PublicSurvey;PublicSurveyKey=<LIGERO_PublicSurveyKey>\r\n\r\nThanks for your help!\r\n\r\nYour LIGERO-Team",
         "NotificationSender" => "quality\@example.com",
         "NotificationSubject" => "Help us with your feedback!",
         "Queues" => [],
@@ -1523,7 +1523,7 @@ sub _BuildSendConditionStrg {
 =head2 _SendConditionCheckCustomerField()
 
 This function collects some field config information from the customer user map.
-In OTRS 6, there is a function in the CustomerUser.pm that should be used instead!!!
+In LIGERO 6, there is a function in the CustomerUser.pm that should be used instead!!!
 
     my %FieldConfig = $SurveyObject->_SendConditionCheckCustomerField(
         FieldName => 'UserEmail',
@@ -1579,7 +1579,7 @@ sub _SendConditionCheckCustomerField {
 =head2 _SendConditionGetFieldSelections()
 
 Returns the selections for the given field (merged from all sources).
-In OTRS 6, there is a function in the CustomerUser.pm that should be used instead!!!
+In LIGERO 6, there is a function in the CustomerUser.pm that should be used instead!!!
 
     my %SelectionsData = $SurveyObject->_SendConditionGetFieldSelections(
         FieldName => 'UserEmail',
@@ -1626,7 +1626,7 @@ sub _SendConditionGetFieldSelections {
 
 =head1 TERMS AND CONDITIONS
 
-This software is part of the OTRS project (L<https://otrs.org/>).
+This software is part of the LIGERO project (L<https://ligero.org/>).
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you

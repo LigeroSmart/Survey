@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<otrs_package version="1.0">
+<ligero_package version="1.0">
     <Name>Survey</Name>
     <Version>0.0.0</Version>
     <Framework Minimum="6.0.16">6.0.x</Framework>
-    <Vendor>OTRS AG</Vendor>
-    <URL>https://otrs.com/</URL>
+    <Vendor>LIGERO AG</Vendor>
+    <URL>https://ligero.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">A customer survey tool.</Description>
     <Description Lang="de">Ein Kundenumfragen Werkzeug.</Description>
@@ -252,7 +252,7 @@
         <strong>WELCOME</strong>
         <br>
         <br>
-        You are about to install the OTRS package Survey.<br>
+        You are about to install the LIGERO package Survey.<br>
         <br>
         <br>
         ((enjoy))<br>
@@ -265,7 +265,7 @@
         <strong>WILLKOMMEN</strong>
         <br>
         <br>
-        Sie sind im Begriff das OTRS-Paket Survey zu installieren.<br>
+        Sie sind im Begriff das LIGERO-Paket Survey zu installieren.<br>
         <br>
         <br>
         ((enjoy))<br>
@@ -278,7 +278,7 @@
         <strong>BIENVENIDO</strong>
         <br>
         <br>
-        Está apunto de instalar el módulo de encuestas de OTRS.<br>
+        Está apunto de instalar el módulo de encuestas de LIGERO.<br>
         <br>
         <br>
         ((enjoy))<br>
@@ -291,7 +291,7 @@
         <strong>ÜDVÖZÖLJÜK</strong>
         <br>
         <br>
-        Ön a Survey OTRS csomag telepítésére készül.<br>
+        Ön a Survey LIGERO csomag telepítésére készül.<br>
         <br>
         <br>
         ((enjoy))<br>
@@ -304,7 +304,7 @@
         <strong>WELCOME</strong>
         <br>
         <br>
-        You are about to upgrade the OTRS package Survey.<br>
+        You are about to upgrade the LIGERO package Survey.<br>
         <br>
         <br>
         ((enjoy))<br>
@@ -317,7 +317,7 @@
         <strong>WILLKOMMEN</strong>
         <br>
         <br>
-        Sie sind im Begriff das OTRS-Paket Survey zu aktualisieren.<br>
+        Sie sind im Begriff das LIGERO-Paket Survey zu aktualisieren.<br>
         <br>
         <br>
         ((enjoy))<br>
@@ -330,7 +330,7 @@
         <strong>BIENVENIDO</strong>
         <br>
         <br>
-        Esta apunto de actualizar el módulo de encuestas de OTRS.<br>
+        Esta apunto de actualizar el módulo de encuestas de LIGERO.<br>
         <br>
         <br>
         ((enjoy))<br>
@@ -343,7 +343,7 @@
         <strong>ÜDVÖZÖLJÜK</strong>
         <br>
         <br>
-        Ön a Survey OTRS csomag frissítésére készül.<br>
+        Ön a Survey LIGERO csomag frissítésére készül.<br>
         <br>
         <br>
         ((enjoy))<br>
@@ -407,4 +407,4 @@
 
     ]]></IntroUninstall>
 
-</otrs_package>
+</ligero_package>

@@ -1,14 +1,14 @@
 # 
 # Translators:
-# OTRS SDN BHD <otrssdnbhd@gmail.com>, 2015
-# OTRS SDN BHD <otrssdnbhd@gmail.com>, 2016
+# LIGERO SDN BHD <ligerosdnbhd@gmail.com>, 2015
+# LIGERO SDN BHD <ligerosdnbhd@gmail.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-07-17 13:51+0000\n"
 "PO-Revision-Date: 2018-07-17 13:53+0000\n"
-"Last-Translator: Carlos Rodríguez <carlos.rodriguez@otrs.com>\n"
-"Language-Team: Malay (http://www.transifex.com/otrs/OTRS/language/ms/)\n"
+"Last-Translator: Carlos Rodríguez <carlos.rodriguez@ligero.com>\n"
+"Language-Team: Malay (http://www.transifex.com/ligero/LIGERO/language/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -522,9 +522,9 @@ msgstr "Mentakrifkan jumlah maksimum kaji selidik yang mendapat dihantar kepada 
 msgid ""
 "Defines the amount in hours a ticket has to be closed to trigger the sending"
 " of a survey, ( 0 means send immediately after close ). Note: delayed survey"
-" sending is done by the OTRS Daemon, prior activation of "
+" sending is done by the LIGERO Daemon, prior activation of "
 "'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend' setting."
-msgstr "Mentakrifkan jumlah jam suatu tiket akan ditutup untuk mencetuskan penghantaran suatu kaji selidik, (0 bererti menghantar segera selepas penutupan). Nota: penghantaran kaji selidik tertunda adalah dilakuan oleh OTRS Daemon, pengaktifan sebelumnya tetapan 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend'."
+msgstr "Mentakrifkan jumlah jam suatu tiket akan ditutup untuk mencetuskan penghantaran suatu kaji selidik, (0 bererti menghantar segera selepas penutupan). Nota: penghantaran kaji selidik tertunda adalah dilakuan oleh LIGERO Daemon, pengaktifan sebelumnya tetapan 'Daemon::SchedulerCronTaskManager::Task###SurveyRequestsSend'."
 
 #. SysConfig
 msgid ""
@@ -620,7 +620,7 @@ msgstr "Penyiasatan awam."
 #. SysConfig
 msgid ""
 "Results older than the configured amount of days will be deleted. Note: "
-"delete results done by the OTRS Daemon, prior activation of "
+"delete results done by the LIGERO Daemon, prior activation of "
 "'Task###SurveyRequestsDelete' setting."
 msgstr ""
 

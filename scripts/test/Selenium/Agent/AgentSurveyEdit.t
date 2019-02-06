@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2019 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -197,8 +197,8 @@ $Selenium->RunTest(
             "ChangeUserLastname"     => $TestUserLogin,
             "ChangeUserLogin"        => $TestUserLogin,
             "CreateUserFirstname"    => 'Admin',
-            "CreateUserFullname"     => 'Admin OTRS',
-            "CreateUserLastname"     => 'OTRS',
+            "CreateUserFullname"     => 'Admin LIGERO',
+            "CreateUserLastname"     => 'LIGERO',
             "CreateUserLogin"        => 'root@localhost',
             "CustomerUserConditions" => {
                 "UserLogin" => [

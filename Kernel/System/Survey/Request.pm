@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2019 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -340,33 +340,33 @@ sub RequestSend {
 
     for my $Data ( sort keys %Ticket ) {
         if ( defined $Ticket{$Data} ) {
-            $Subject =~ s/<OTRS_TICKET_$Data>/$Ticket{$Data}/gi;
-            $Body    =~ s/<OTRS_TICKET_$Data>/$Ticket{$Data}/gi;
+            $Subject =~ s/<LIGERO_TICKET_$Data>/$Ticket{$Data}/gi;
+            $Body    =~ s/<LIGERO_TICKET_$Data>/$Ticket{$Data}/gi;
 
             # filter for new rich text content
-            $Body =~ s/&lt;OTRS_TICKET_$Data&gt;/$Ticket{$Data}/g;
+            $Body =~ s/&lt;LIGERO_TICKET_$Data&gt;/$Ticket{$Data}/g;
         }
     }
 
     # cleanup
-    $Subject =~ s/<OTRS_TICKET_.+?>/-/gi;
-    $Body    =~ s/<OTRS_TICKET_.+?>/-/gi;
+    $Subject =~ s/<LIGERO_TICKET_.+?>/-/gi;
+    $Body    =~ s/<LIGERO_TICKET_.+?>/-/gi;
 
     # replace config options
-    $Subject =~ s{<OTRS_CONFIG_(.+?)>}{$ConfigObject->Get($1)}egx;
-    $Body    =~ s{<OTRS_CONFIG_(.+?)>}{$ConfigObject->Get($1)}egx;
+    $Subject =~ s{<LIGERO_CONFIG_(.+?)>}{$ConfigObject->Get($1)}egx;
+    $Body    =~ s{<LIGERO_CONFIG_(.+?)>}{$ConfigObject->Get($1)}egx;
 
     # filter for new rich text content
-    $Body =~ s{&lt;OTRS_CONFIG_(.+?)&gt;}{$ConfigObject->Get($1)}egx;
+    $Body =~ s{&lt;LIGERO_CONFIG_(.+?)&gt;}{$ConfigObject->Get($1)}egx;
 
     # cleanup
-    $Subject =~ s/<OTRS_CONFIG_.+?>/-/gi;
-    $Body    =~ s/<OTRS_CONFIG_.+?>/-/gi;
+    $Subject =~ s/<LIGERO_CONFIG_.+?>/-/gi;
+    $Body    =~ s/<LIGERO_CONFIG_.+?>/-/gi;
 
     # filter for new rich text content
-    $Body =~ s/&lt;OTRS_CONFIG_.+?&gt;/-/gi;
+    $Body =~ s/&lt;LIGERO_CONFIG_.+?&gt;/-/gi;
 
-    # get customer data and replace it with <OTRS_CUSTOMER_DATA_...
+    # get customer data and replace it with <LIGERO_CUSTOMER_DATA_...
     if (%CustomerUser) {
 
         # replace customer stuff with tags
@@ -374,27 +374,27 @@ sub RequestSend {
         for my $Data ( sort keys %CustomerUser ) {
             next CUSTOMER if !$CustomerUser{$Data};
 
-            $Subject =~ s/<OTRS_CUSTOMER_DATA_$Data>/$CustomerUser{$Data}/gi;
-            $Body    =~ s/<OTRS_CUSTOMER_DATA_$Data>/$CustomerUser{$Data}/gi;
+            $Subject =~ s/<LIGERO_CUSTOMER_DATA_$Data>/$CustomerUser{$Data}/gi;
+            $Body    =~ s/<LIGERO_CUSTOMER_DATA_$Data>/$CustomerUser{$Data}/gi;
 
             # filter for new rich text content
-            $Body =~ s/&lt;OTRS_CUSTOMER_DATA_$Data&gt;/$CustomerUser{$Data}/gi;
+            $Body =~ s/&lt;LIGERO_CUSTOMER_DATA_$Data&gt;/$CustomerUser{$Data}/gi;
         }
     }
 
-    # cleanup all not needed <OTRS_CUSTOMER_DATA_ tags
-    $Subject =~ s/<OTRS_CUSTOMER_DATA_.+?>/-/gi;
-    $Body    =~ s/<OTRS_CUSTOMER_DATA_.+?>/-/gi;
+    # cleanup all not needed <LIGERO_CUSTOMER_DATA_ tags
+    $Subject =~ s/<LIGERO_CUSTOMER_DATA_.+?>/-/gi;
+    $Body    =~ s/<LIGERO_CUSTOMER_DATA_.+?>/-/gi;
 
     # filter for new rich text content
-    $Body =~ s/&lt;OTRS_CUSTOMER_DATA_.+?&gt;/-/gi;
+    $Body =~ s/&lt;LIGERO_CUSTOMER_DATA_.+?&gt;/-/gi;
 
     # replace key
-    $Subject =~ s/<OTRS_PublicSurveyKey>/$PublicSurveyKey/gi;
-    $Body    =~ s/<OTRS_PublicSurveyKey>/$PublicSurveyKey/gi;
+    $Subject =~ s/<LIGERO_PublicSurveyKey>/$PublicSurveyKey/gi;
+    $Body    =~ s/<LIGERO_PublicSurveyKey>/$PublicSurveyKey/gi;
 
     # filter for new rich text content
-    $Body =~ s/&lt;OTRS_PublicSurveyKey&gt;/$PublicSurveyKey/gi;
+    $Body =~ s/&lt;LIGERO_PublicSurveyKey&gt;/$PublicSurveyKey/gi;
 
     # Get request recipient.
     my $To = $Self->_GetRequestRecipient(
@@ -830,7 +830,7 @@ sub _GetRequestRecipient {
 
 =head1 TERMS AND CONDITIONS
 
-This software is part of the OTRS project (L<https://otrs.org/>).
+This software is part of the LIGERO project (L<https://ligero.org/>).
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you
